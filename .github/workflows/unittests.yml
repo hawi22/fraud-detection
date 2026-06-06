@@ -1,0 +1,17 @@
+name: Python Unit Tests
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas scikit-learn imbalanced-learn
+      - name: Run Test
+        run: python -c "import pandas; print('Pandas loaded successfully')"

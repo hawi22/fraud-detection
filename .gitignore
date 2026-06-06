@@ -1,0 +1,14 @@
+# Data files (Crucial: do not upload raw data)
+data/raw/
+data/processed/
+
+# Python environment
+__pycache__/
+*.pyc
+.venv/
+env/
+.DS_Store
+
+# IDE settings
+.vscode/
+.idea/
