@@ -23,3 +23,13 @@ In this phase, I have:
 1. Clone the repository.
 2. Install dependencies: `pip install -r requirements.txt`
 3. Run notebooks in order: `eda-fraud-data.ipynb` -> `eda-creditcard.ipynb` -> `feature-engineering.ipynb`.
+### Key Achievements:
+- **IP Mapping**: Successfully mapped IP addresses to countries using range-based lookups.
+- **Feature Engineering**: Created behavioral features: `time_since_signup` (to catch instant-purchases) and `device_usage_count` (to catch velocity attacks).
+- **Class Imbalance**: Documented a 9.3% fraud rate in the original data. 
+- **Resampling**: Applied **SMOTE** to the training set, balancing the classes to a 50/50 distribution (109,568 samples each) to ensure the model learns fraud patterns effectively.
+
+## Project Structure
+- `data/`: Data storage (excluded from GitHub).
+- `notebooks/`: Sequential process from EDA to Modeling Prep.
+- `requirements.txt`: Project dependencies.
