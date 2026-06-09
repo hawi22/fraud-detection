@@ -33,3 +33,9 @@ In this phase, I have:
 - `data/`: Data storage (excluded from GitHub).
 - `notebooks/`: Sequential process from EDA to Modeling Prep.
 - `requirements.txt`: Project dependencies.
+## Task 2: Model Building and Training
+- **Model Comparison**: I compared a Logistic Regression baseline against a Random Forest ensemble.
+Performance:
+- **Logistic Regression**: Provided good interpretability but had a lower AUC-PR, indicating a higher rate of false positives.
+- **Random Forest**: Significantly outperformed the baseline in capturing complex fraud patterns (e.g., the interaction between age and device_velocity).
+- **Metrics**: I prioritized AUC-PR over Accuracy because of the class imbalance. The Random Forest achieved a balanced performance between catching fraud (Recall) and minimizing customer friction (Precision).
